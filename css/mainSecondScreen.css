@@ -1,0 +1,61 @@
+.secondView{
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../images/Group18.png");
+    background-repeat: no-repeat;
+
+    font-family: 'Ruda', sans-serif;
+
+    font-size: 35px;
+    color: white;
+    text-align: right;
+}
+.container{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.secondView h2 {
+    margin-top: 0;
+    padding-top: 140px;
+    font-size: 25px;
+    color: #C9C9C9;
+}
+.secondView h1 {
+    margin-top: 5px;
+}
+
+.secondScreenBTN{
+    color: white;
+    font-family: 'Ruda', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative;
+
+
+    background-color: rgba(15, 128, 233, 0);;
+    border: 1px solid #0F80E9;
+    width: 250px;
+    height: 65px;
+
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.secondScreenBTN:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    background: rgba(15, 128, 233, 0.4);
+    transition: all 0.3s ease;
+}
+.secondScreenBTN:hover:before{
+    width: 100%;
+
+}
