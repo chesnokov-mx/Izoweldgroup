@@ -168,9 +168,10 @@ body{
 .InviteToSendRequest{
     display: block;
     height: 360px;
-    margin-left: 120px;
+    margin-left: 100px;
     background-color: black;
     color: white;
+
 }
 .InviteToSendRequest p {
     margin-top: 0;

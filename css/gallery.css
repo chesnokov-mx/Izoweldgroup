@@ -1,0 +1,60 @@
+.GALLERY__title{
+    margin-left: 130px;
+}
+.GALLERY__navigation{
+    margin-left: 150px;
+}
+.GALLERY__navigation-btn{
+    padding-left: 60px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    margin-right: 20px;
+    transition: all 0.4s ease-out;
+}
+.GALLERY__navigation-btn:hover{
+    color: #0F80E9;
+}
+.GALLERY__navigation-btn:before{
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 50px;
+    background-color: black;
+    left: 4px;
+    top: 14px;
+    transition: all 0.3s ease;
+}
+.GALLERY__navigation-btn:hover:before{
+    transform: rotate(-45deg);
+}
+
+.GALLERY__content{
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.GALLERY__content-wrapper{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(5, 280px);
+}
+.GALLERY__content-item{
+    /*background-color: ;*/
+    max-height: 280px;
+    max-height: 350px;
+}
+.GALLERY__content-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

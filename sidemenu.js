@@ -1,9 +1,9 @@
 $(document).ready(function (){
 
     $(".hamburger").hover(function (){
-        $(".hamburger").css("border","1px solid aqua")
-        $(".hamburger span").css("background-color","aqua")
-        $(".MenuText").css("color", "aqua")
+        $(".hamburger").css("border","1px solid #0F80E9")
+        $(".hamburger span").css("background-color","#0F80E9")
+        $(".MenuText").css("color", "#0F80E9")
     },function (){
         $(".hamburger").css("border","1px solid #7c7c7c")
         $(".hamburger span").css("background-color","white")
@@ -11,7 +11,7 @@ $(document).ready(function (){
     })
 
     $(".hamburger").click(function (){
-        if($(".SideMenu").css("width") === "120px") {
+        if($(".SideMenu").css("width") === "100px") {
             $(".MenuText").animate({
                 opacity: 0
             }, 500,function (){
@@ -41,7 +41,7 @@ $(document).ready(function (){
                 opacity: 0
             }, 250, function (){
                 $(".SideMenu").animate({
-                    width: "120px"
+                    width: "100px"
                 }, 600, function (){
                     $(".MenuText").css("display", "block")
                     $(".MenuText").animate({

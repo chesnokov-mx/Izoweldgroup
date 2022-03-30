@@ -1,13 +1,13 @@
 .FeedBackForm{
     height: 100vh;
     top:0;
-    left: 120px;
+    left: 100px;
     position: fixed;
     width: 700px;
     background-color: white;
     border-right: 2px solid black;
     z-index: 1;
-    transform: translateX(0px);
+    transform: translateX(-1000px);
 }
 
 .FeedBackForm h1 {

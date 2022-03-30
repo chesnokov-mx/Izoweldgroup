@@ -21,7 +21,7 @@
     display: block;
 }
 footer{
-    margin-left: 120px;
+    margin-left: 100px;
     height: 300px;
     background-image: url("../images/footerbg.png");
     background-color: rgba(0, 0, 0, 0.95);
@@ -54,7 +54,9 @@ footer{
 }
 .footer__navigation-link{
     margin-bottom: 25px;
-
+}
+.footer__navigation-link:visited{
+    color:white;
 }
 .footer__contacts{
     margin-left: 100px;

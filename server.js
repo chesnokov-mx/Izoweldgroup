@@ -6,12 +6,20 @@ const fs = require('fs')
 
 const server = http.createServer(function (request, response){
     const urll = url.parse(request.url).pathname;
-    if (urll === '/'){
+    if (urll === '/' || urll === '/index.html'){
         const text = fs.readFileSync('index.html', 'utf-8')
         response.end(text)
     }
     if (urll === '/aboutus.html'){
         const text = fs.readFileSync('aboutus.html', 'utf-8')
+        response.end(text)
+    }
+    if (urll === '/Contacts.html'){
+        const text = fs.readFileSync('Contacts.html', 'utf-8')
+        response.end(text)
+    }
+    if (urll === '/gallery.html'){
+        const text = fs.readFileSync('gallery.html', 'utf-8')
         response.end(text)
     }
 
@@ -33,6 +41,11 @@ const server = http.createServer(function (request, response){
         response.end(svg)
     }
     if(normurl[normurl.length-1] === 'g' && normurl[normurl.length-2] === 'e'){
+        const svg = fs.readFileSync(normurl, )
+        response.writeHead(200, {"content-type" : "image/jpeg"})
+        response.end(svg)
+    }
+    if(normurl[normurl.length-1] === 'G' && normurl[normurl.length-2] === 'P'){
         const svg = fs.readFileSync(normurl, )
         response.writeHead(200, {"content-type" : "image/jpeg"})
         response.end(svg)
