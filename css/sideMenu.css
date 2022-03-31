@@ -1,0 +1,129 @@
+*{
+    font-family: 'Ruda', sans-serif;
+}
+
+.SideMenu{
+    position: fixed;
+    z-index: 2;
+    width: 90px;
+    background-color: black;
+    height: 100vh;
+
+}
+.hamburger{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 1px solid #7c7c7c;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.hamburger span{
+    width: 30px;
+    height: 1px;
+    background-color: white;
+}
+.hamburger .main_poo{
+    position: absolute;
+    margin-top: 17px;
+    opacity: 0;
+    transform: rotate(45deg);
+}
+.hamburger .less_po{
+    width: 17px;
+    margin-top: 10px;
+
+}
+.hamburger .less_po_last{
+    margin-bottom: 10px;
+    width: 17px;
+}
+
+
+.MenuText{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    cursor: default;
+    user-select: none;
+
+    font-weight: 400;
+    font-style: normal;
+}
+.navText{
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    transition: color, letter-spacing 0.4s;
+    letter-spacing: 1px;
+}
+.navText:hover{
+    letter-spacing: 2px;
+    color: #0F80E9;
+}
+
+
+.navWrapper{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+.navWrapper span{
+    height: 1px;
+    width: 70%;
+    background-color: #363636;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Language{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    color: white;
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+.Language button{
+    transition: color, letter-spacing 0.4s;
+    background-color: black;
+
+    font-size: 12px;
+    color: white;
+    border: black;
+    cursor: pointer;
+}
+.Language button:hover{
+    letter-spacing: 1px;
+    color: #0F80E9;
+}
+
+
+@media (max-width: 1200px){
+    /*.SideMenu{*/
+    /*    !*background-color: white;*!*/
+    /*    width: 100%;*/
+    /*    height: 1px;*/
+    /*}*/
+    /*.hamburger{*/
+    /*    margin-top: 20px;*/
+    /*}*/
+}

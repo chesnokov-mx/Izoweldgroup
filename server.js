@@ -6,20 +6,20 @@ const fs = require('fs')
 
 const server = http.createServer(function (request, response){
     const urll = url.parse(request.url).pathname;
-    if (urll === '/' || urll === '/index.html'){
-        const text = fs.readFileSync('index.html', 'utf-8')
+    if (urll === '/' || urll === '/html/index.html'){
+        const text = fs.readFileSync('html/index.html', 'utf-8')
         response.end(text)
     }
-    if (urll === '/aboutus.html'){
-        const text = fs.readFileSync('aboutus.html', 'utf-8')
+    if (urll === '/html/aboutus.html'){
+        const text = fs.readFileSync('html/aboutus.html', 'utf-8')
         response.end(text)
     }
-    if (urll === '/Contacts.html'){
-        const text = fs.readFileSync('Contacts.html', 'utf-8')
+    if (urll === '/html/Contacts.html'){
+        const text = fs.readFileSync('html/Contacts.html', 'utf-8')
         response.end(text)
     }
-    if (urll === '/gallery.html'){
-        const text = fs.readFileSync('gallery.html', 'utf-8')
+    if (urll === '/html/gallery.html'){
+        const text = fs.readFileSync('html/gallery.html', 'utf-8')
         response.end(text)
     }
 
