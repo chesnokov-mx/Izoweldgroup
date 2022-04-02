@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>ContactUs</title>
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/aboutUs.css">
+
   <link rel="stylesheet" href="../css/contacts.css">
+
+  <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/FeedbackForm.css">
-  <link rel="stylesheet" href="../css/third_screen.css">
   <link rel="stylesheet" href="../css/sideMenu.css">
+  <link rel="stylesheet" href="../css/footer.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="preload" href="../Fonts/Ruda/Ruda-VariableFont_wght.ttf" as="font">
 </head>
 <body>
-  <section class="RootSideMenu"></section>
+  <div class="RootSideMenu"></div>
+
 
   <section class="Contacts__title">
-    <div class="container">
-      <h1 class="Paige__title">CONTACTS</h1>
-    </div>
-
+      <div class="Contacts__title-wrapper">
+        <p class="Paige__title">CONTACTS</p>
+      </div>
   </section>
+
+
   <section class="MAINcontainer">
     <div class="leftPart">
       <div class="leftPart-inside">
-        <p>CALL</p>
-        <span></span>
-        <p class="notBold">+420 776 207 370</p>
+          <p>CALL</p>
+          <span></span>
+          <p class="notBold">+420 776 207 370</p>
       </div>
       <div class="leftPart-inside">
         <p>WRITE</p>
@@ -68,27 +71,27 @@
 
     </div>
     <div class="rightPart">
-      <p class="leftPart-insideP">MAP</p>
-      <span class="leftPart-insideSPAN"></span>
+<!--      <p class="leftPart-insideP">MAP</p>-->
+<!--      <span class="leftPart-insideSPAN"></span>-->
       <div class="iframeContainer">
-        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2927075977886!2d17.695424229946138!3d48.90979475265889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47135cb361097e2b%3A0x92742fa3566ede62!2zRHJhaHkgSVYgMTAzNCwgNjg3IDY1IFN0csOhbsOtLCDQp9C10YXQuNGP!5e0!3m2!1sru!2sru!4v1648652296148!5m2!1sru!2sru"  height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2927075977886!2d17.695424229946138!3d48.90979475265889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47135cb361097e2b%3A0x92742fa3566ede62!2zRHJhaHkgSVYgMTAzNCwgNjg3IDY1IFN0csOhbsOtLCDQp9C10YXQuNGP!5e0!3m2!1sru!2sru!4v1648652296148!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
-  <section class="InviteToSendRequest">
-    <div class="InviteToSendRequest-divGrid">
-      <div class="InviteToSendRequest-divGrid-left">
-        <p>
-          If you are interested in a price list for welding work, please contact us by phone or via the feedback form and indicate what work needs to be done. Our manager will inform you the most up-to-date information on the cost and timing of the order.
-        </p>
-      </div>
-      <div class="InviteToSendRequest-divGrid-right">
-        <button class="FeedBackForm-OpenBTN">
-          Send request
-        </button>
-      </div>
-    </div>
-  </section>
+<!--  <section class="InviteToSendRequest">-->
+<!--    <div class="InviteToSendRequest-divGrid">-->
+<!--      <div class="InviteToSendRequest-divGrid-left">-->
+<!--        <p>-->
+<!--          If you are interested in a price list for welding work, please contact us by phone or via the feedback form and indicate what work needs to be done. Our manager will inform you the most up-to-date information on the cost and timing of the order.-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="InviteToSendRequest-divGrid-right">-->
+<!--        <button class="FeedBackForm-OpenBTN">-->
+<!--          Send request-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
   <section class="FeedBackForm">
     <div>
       <h1>SEND A REQUEST FOR A PROJECT</h1>
@@ -102,28 +105,11 @@
       <button class="FeedBackForm-closeBTN">close</button>
     </div>
   </section>
-  <footer>
-    <div class="container footer_lr">
-      <div class="footer_left">IZOWELD GROUP</div>
-      <div class="footer_right">
-        <div class="footer__navigation">
-          <p class="pl-10">Navigation</p>
-          <a class="footer__navigation-link hover_effect" href="aboutus.html">About us</a>
-          <a class="footer__navigation-link hover_effect">Gallery</a>
-          <a class="footer__navigation-link hover_effect">Contacts</a>
-        </div>
-        <div class="footer__contacts">
-          <p class="pl-10">Phone</p>
-          <p>+420 776 207 370</p>
-          <p class="pl-10">E-mail</p>
-          <p>izoweldgroup@post.cz</p>
-        </div>
-      </div>
-    </div>
-  </footer>
 
+  <div class="RootFooter"></div>
 
-  <script src="../FeedbackForm.js"></script>
+  <script type="text/javascript" src="../FeedbackForm.js"></script>
+  <script type="text/javascript" src="../footer.js"></script>
   <script type="text/javascript" src="../sidemenu.js"></script>
 </body>
 </html>
