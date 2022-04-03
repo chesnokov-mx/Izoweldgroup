@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+video{
+    height: 100vh;
+}
+.firstView{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /*background-image: url("../images/mainbg.png");*/
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+
+}
+.Paige__title{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 15px;
+}

@@ -2,14 +2,16 @@
   "name": "company",
   "version": "1.0.0",
   "description": "very cool project",
-  "main": "sidemenu.js",
+  "main": "js/sidemenu.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "express": "^4.17.3",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15"
   }
 }

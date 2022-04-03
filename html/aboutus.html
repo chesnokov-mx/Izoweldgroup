@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ABOUT US</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/aboutUs.css">
-    <link rel="stylesheet" href="../css/third_screen.css">
-    <link rel="stylesheet" href="../css/FeedbackForm.css">
-    <link rel="stylesheet" href="../css/sideMenu.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutUs.css">
+    <link rel="stylesheet" type="text/css" href="css/FeedbackForm.css">
+    <link rel="stylesheet" type="text/css" href="css/sideMenu.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -27,7 +27,8 @@
     <section class="tenYears">
         <div class="tenYears-wrapper">
             <div class="tenYears__rectangle">
-                <span>10</span> <p>years on the market</p>
+                <span>10</span>
+                <p>years on the market</p>
             </div>
             <div class="tenYears__divText">
                 <h5>TIG welding requires quality and precision in work.
@@ -40,6 +41,9 @@
         </div>
     </section>
     <section class="CompletedProjects">
+        <div class="BackgroundOnSmallDevice">
+            <img src="images/mapEurope.svg" width="100%" alt="">
+        </div>
         <h1>COMPLETED PROJECTS IN <b>5 COUNTRIES</b></h1>
         <ul>
             <li><b>Germany</b> - breweries, dairies, food industry</li>
@@ -49,42 +53,18 @@
             <li><b>Czech Republic</b> - biogas, pharmaceuticals</li>
         </ul>
         <p>The geography of services is not limited to the Czech Republic: we work with all of Europe, and are ready to consider options for cooperation with new customers.</p>
-        <a href="">WATCH US AT WORK</a>
-    </section>
-    <section class="InviteToSendRequest">
-        <div class="InviteToSendRequest-divGrid">
-            <div class="InviteToSendRequest-divGrid-left">
-                <p>
-                If you are interested in a price list for welding work, please contact us by phone or via the feedback form and indicate what work needs to be done. Our manager will inform you the most up-to-date information on the cost and timing of the order.
-                </p>
-            </div>
-            <div class="InviteToSendRequest-divGrid-right">
-                <button class="FeedBackForm-OpenBTN">
-                    Send request
-                </button>
-            </div>
-        </div>
-    </section>
-    <section class="FeedBackForm">
-        <div>
-            <h1>SEND A REQUEST FOR A PROJECT</h1>
-            <form>
-                <input class="FeedBackForm-input" name="ip" placeholder="YOUR NAME">
-                <input class="FeedBackForm-input"name="ip" placeholder="YOUR E-MAIL">
-                <input class="FeedBackForm-input" name="ip" placeholder="YOUR PHONE NUMBER">
-                <textarea class="FeedBackForm-input message" name="ip" placeholder="MESSAGE"></textarea>
-                <button class="FeedBackForm-btn">Send Request</button>
-            </form>
-            <button class="FeedBackForm-closeBTN">close</button>
-        </div>
+        <a class="cool_link" href="gallery.html">WATCH US AT WORK</a>
     </section>
 
+
+
+    <div class="RootFeedBackForm"></div>
 
     <div class="RootFooter"></div>
 
 
-    <script src="../footer.js"></script>
-    <script src="../sidemenu.js"></script>
-    <script src="../FeedbackForm.js"></script>
+    <script src="/footer.js"></script>
+    <script src="/sidemenu.js"></script>
+    <script src="/FeedbackForm.js"></script>
 </body>
 </html>
