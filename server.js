@@ -120,7 +120,8 @@ app.get("/galleryLoadIN.js", function (req, res) {
     res.sendFile(__dirname + "/js/galleryLoadIN.js");
 });
 
+// app.set('port', process.env.PORT || 8080);
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("Listening on port 3000!");
 });
