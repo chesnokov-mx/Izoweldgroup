@@ -4,7 +4,7 @@
 
 .SideMenu{
     position: fixed;
-    z-index: 2;
+    z-index: 20;
     width: 90px;
     background-color: black;
     height: 100vh;

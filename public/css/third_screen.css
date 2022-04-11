@@ -1,22 +1,7 @@
-.learn_more{
-    margin-left: 90px;
-    height: 350px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.learn_wrapper{
-}
 .thirdScreen__title{
     font-family: 'Ruda', sans-serif;
     color: white;
     font-size: 25px;
     text-align: justify;
-}
-.addition_to_btn{
-    margin-left: auto;
-    display: block;
+    padding: 0 120px;
 }

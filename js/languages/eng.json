@@ -1,0 +1,72 @@
+{
+
+  "menu": "menu",
+  "about_us": "ABOUT US",
+  "gallery": "GALLERY",
+  "contacts": "CONTACTS",
+
+
+  "index_h1": "We offer industrial metal welding services.",
+  "index_h2": "Nothing is impossible for us, the word \"NO\" does not exist.",
+  "index_leftbtn": "Contact us",
+  "index_rightbtn": "View projects",
+
+  "index_secondSCR_h1": "Our experience and knowledge, modern equipment of world leaders in the production of welding equipment - this is the guarantee of a successful solution of your production tasks!",
+  "index_secondSCR_btn": "Learn more",
+
+  "footer_nav": "Navigation",
+  "footer_nav_AU": "About us",
+  "footer_nav_G": "Gallery",
+  "footer_nav_C": "Contacts",
+
+  "footer_phone": "Phone",
+
+  "ABOUT US": "ABOUT US",
+  "weoffer": "We offer industrial metal welding services.\n",
+  "weare": "We are ready to fulfill welding orders",
+
+  "yearsonMarket": "years on the market",
+  "TIG": "TIG welding requires quality and precision in work. Not everyone succeeds, but we manage without problems!",
+  "TIG#1": "The experience of our masters allows us to perform welding work of any complexity.",
+  "TIG#2": "We use our own equipment and materials for welding.\n\n",
+  "TIG#3": "All work is carried out by certified specialists in full compliance with current regulatory requirements.",
+
+  "Completed": "COMPLETED PROJECTS <b>5 COUNTRIES</b>",
+  "1cntr": "<b>Germany</b> - breweries, dairies, food industry",
+  "2cntr": "<b>Netherlands</b> - shipyards, refineries",
+  "3cntr": "<b>England</b> - breweries, food, industry",
+  "4cntr": "<b>Austria</b> - food industry",
+  "5cntr": "<b>Czech Republic</b> - biogas, pharmaceuticals",
+
+  "geo": "The geography of services is not limited to the Czech Republic: we work with all of Europe, and are ready to consider options for cooperation with new customers.",
+  "WATCH US AT WORK": "WATCH US AT WORK",
+
+  "invitetoreq": "If you are interested in a price list for welding work, please contact us by phone or via the feedback form and indicate what work needs to be done. Our manager will inform you the most up-to-date information on the cost and timing of the order.",
+  "inviteBTN": "Send request",
+
+  "SEND A REQUEST FOR A PROJECT": "SEND A REQUEST FOR A PROJECT",
+  "YOUR NAME": "YOUR NAME",
+  "YOUR E_MAIL": "YOUR E_MAIL",
+  "YOUR PHONE NUMBER": "YOUR PHONE NUMBER",
+  "MESSAGE": "MESSAGE",
+  "CLOSE": "close",
+  "Send request": "Send request",
+
+
+
+  "GALLERY": "GALLERY",
+  "Watch us at work": "Watch us at work",
+  "shipyard": "shipyard",
+  "food industry": "food industry",
+  "biogas": "biogas",
+  "workshop": "workshop",
+
+
+  "CONTACTS": "CONTACTS",
+  "CALL": "CALL",
+  "WRITE": "WRITE",
+  "COME": "COME",
+  "BANK ACCOUNT": "BANK ACCOUNT"
+
+
+}

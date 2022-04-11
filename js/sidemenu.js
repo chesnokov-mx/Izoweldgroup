@@ -20,24 +20,24 @@ $(document).ready(function (){
         "                <span class=\"main_poo\"></span>\n" +
         "                <span class=\"less_po_last\"></span>\n" +
         "         </button>\n" +
-        "         <p class=\"MenuText\">\n" +
+        "         <p class=\"MenuText\" lng='menu'>\n" +
         "             menu\n" +
         "         </p>\n" +
         "         <nav class=\"NavNav\">\n" +
         "             <div class=\"navWrapper\">\n" +
         "                 <a class=\"navText\" href=\"/\">IZOWELD GROUP</a>\n" +
         "                 <span></span>\n" +
-        "                 <a class=\"navText\" href=\"/AboutUs\">ABOUT US</a>\n" +
+        "                 <a class=\"navText\" href=\"/AboutUs\" lng='about_us'>ABOUT US</a>\n" +
         "                 <span></span>\n" +
-        "                 <a class=\"navText\" href=\"/Gallery\">GALLERY</a>\n" +
+        "                 <a class=\"navText\" href=\"/Gallery\" lng='gallery'>GALLERY</a>\n" +
         "                 <span></span>\n" +
-        "                 <a class=\"navText\" href=\"/Contacts\">CONTACTS</a>\n" +
+        "                 <a class=\"navText\" href=\"/Contacts\" lng='contacts'>CONTACTS</a>\n" +
         "             </div>\n" +
         "         </nav>\n" +
         "         <div class=\"Language\">\n" +
-        "             <button>EN</button>\n" +
-        "             <button>CZ</button>\n" +
-        "             <button>DE</button>\n" +
+        "             <button id='en'>EN</button>\n" +
+        "             <button id='cz'>CZ</button>\n" +
+        "             <button id='de'>DE</button>\n" +
         "         </div>\n" +
         "     </div>")
 

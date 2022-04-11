@@ -1,75 +1,6 @@
-// 'use strict'
-//
-// const http = require('http')
-// const url = require('url')
-// const fs = require('fs')
-// const util = require('util');
-//
-// const server = http.createServer(function (req, res){
-//     const urll = url.parse(req.url).pathname;
-//
-//
-//
-//
-//
-//     if (urll === '/' || urll === '/html/index.html'){
-//         const text = fs.readFileSync('html/index.html', 'utf-8')
-//         res.end(text)
-//     }
-//     if (urll === '/html/aboutus.html'){
-//         const text = fs.readFileSync('html/aboutus.html', 'utf-8')
-//         res.end(text)
-//     }
-//     if (urll === '/html/Contacts.html'){
-//         const text = fs.readFileSync('html/Contacts.html', 'utf-8')
-//         res.end(text)
-//     }
-//     if (urll === '/html/gallery.html'){
-//         const text = fs.readFileSync('html/gallery.html', 'utf-8')
-//         res.end(text)
-//     }
-//
-//
-//
-//
-//
-//     if(normurl[normurl.length-1] === 'g' && normurl[normurl.length-2] === 'v'){
-//         const svg = fs.readFileSync(normurl, )
-//         res.writeHead(200, {"content-type" : "image/svg+xml"})
-//         res.end(svg)
-//     }
-//     if(normurl[normurl.length-1] === 'g' && normurl[normurl.length-2] === 'n'){
-//         const svg = fs.readFileSync(normurl, )
-//         res.writeHead(200, {"content-type" : "image/png"})
-//         res.end(svg)
-//     }
-//     if(normurl[normurl.length-1] === 'g' && normurl[normurl.length-2] === 'e'){
-//         const svg = fs.readFileSync(normurl, )
-//         res.writeHead(200, {"content-type" : "image/jpeg"})
-//         res.end(svg)
-//     }
-//     if(normurl[normurl.length-1] === 'G' && normurl[normurl.length-2] === 'P'){
-//         const svg = fs.readFileSync(normurl, )
-//         res.writeHead(200, {"content-type" : "image/jpeg"})
-//         res.end(svg)
-//     }
-//     if(normurl[normurl.length-1] === 'f'){
-//         const svg = fs.readFileSync(normurl)
-//         res.writeHead(200, {"content-type" : "image/gif"})
-//         res.end(svg)
-//     }
-//
-//     res.end()
-// })
-//
-// server.listen(process.env.PORT || 3000);
-// console.log('server started!')
-
 const express = require("express");
 const app = express();
 const fs = require("fs");
-
-
 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/html/index.html");
@@ -84,12 +15,45 @@ app.get("/Contacts", function (req, res) {
     res.sendFile(__dirname + "/html/Contacts.html");
 });
 
-
 app.use(express.static(__dirname + '/public'));
-
-
+app.use(express.urlencoded({
+    extended: true
+}))
 
 const filePath = "./public/VIDEO/video.mp4";
+
+const nodemailer = require('nodemailer')
+app.post('/submit-form', (req, res) => {
+
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'izoweldgroupmail@gmail.com',
+            pass: 'izoweldgroupmail1!',
+        },
+    })
+    let mailOptions = {
+        from: 'izoweldgroupmail@gmail.com', // sender address
+        to: 'izoweldgroupmail@gmail.com', // list of receivers
+        subject: 'New Request', // Subject line
+        html: "Email: " + req.body.email + "<br>" +
+                "Name: " + req.body.name + "<br>" +
+            "Phone number: " + req.body.num + "<br>" +
+            "Message: " + req.body.msg
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log('Error');
+        } else {
+            console.log('Message sent: %s', info.messageId);
+            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        }
+    })
+
+    res.sendFile(__dirname + "/html/index.html");
+
+})
 
 app.get('/works-in-chrome-and-safari', (req, res) => {
 
@@ -170,11 +134,19 @@ app.get('/works-in-chrome-and-safari', (req, res) => {
         }
     });
 });
+app.get("/languages/eng.json", function (req, res) {
+    const data = require(__dirname + "/js/languages/eng.json");
+    res.json(data);
 
-
-
-
-
+});
+app.get("/languages/cz.json", function (req, res) {
+    const data = require(__dirname + "/js/languages/cz.json");
+    res.json(data);
+});
+app.get("/languages/de.json", function (req, res) {
+    const data = require(__dirname + "/js/languages/de.json");
+    res.json(data);
+});
 
 app.get("/sidemenu.js", function (req, res) {
     res.sendFile(__dirname + "/js/sidemenu.js");
@@ -188,26 +160,9 @@ app.get("/FeedbackForm.js", function (req, res) {
 app.get("/galleryLoadIN.js", function (req, res) {
     res.sendFile(__dirname + "/js/galleryLoadIN.js");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.get("/SL.js", function (req, res) {
+    res.sendFile(__dirname + "/js/SL.js");
+});
 app.listen(process.env.PORT || 3000, function () {
     console.log("Listening on port 3000!");
 });
