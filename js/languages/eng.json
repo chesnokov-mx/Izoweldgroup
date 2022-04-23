@@ -23,7 +23,7 @@
 
   "ABOUT US": "ABOUT US",
   "weoffer": "We offer industrial metal welding services.\n",
-  "weare": "We are ready to fulfill welding orders",
+  "weare": "We are ready to fulfill welding orders.",
 
   "yearsonMarket": "years on the market",
   "TIG": "TIG welding requires quality and precision in work. Not everyone succeeds, but we manage without problems!",
@@ -63,9 +63,9 @@
 
 
   "CONTACTS": "CONTACTS",
-  "CALL": "CALL",
-  "WRITE": "WRITE",
-  "COME": "COME",
+  "CALL": "PHONE",
+  "WRITE": "E-MAIL",
+  "COME": "ADDRESS",
   "BANK ACCOUNT": "BANK ACCOUNT"
 
 

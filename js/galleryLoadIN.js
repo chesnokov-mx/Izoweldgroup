@@ -72,7 +72,15 @@ $(document).ready(function (){
 
 
 
-
+    function getWidth() {
+        return Math.max(
+            document.body.scrollWidth,
+            document.documentElement.scrollWidth,
+            document.body.offsetWidth,
+            document.documentElement.offsetWidth,
+            document.documentElement.clientWidth
+        );
+    }
 
 
     $(function() {
@@ -80,12 +88,15 @@ $(document).ready(function (){
 
             var i_path = $(this).attr('src');
             $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
-            $('#magnify').css({
-                left: ($(document).width() - $('#magnify').outerWidth()) / 2,
-                // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
-
-                top: ($(window).height() - $('#magnify').outerHeight()) / 2
-            });
+            // if(getWidth() <= 500){
+            //     $('#magnify').css({left: "0px",});
+            // }
+            // $('#magnify').css({
+            //     // left: ($(document).width() - $('#magnify').outerWidth())/2,
+            //     // left: "-100px",
+            //     // top: "100px", .outerWidth()
+            //     // top: ($(window).height() - $('#magnify').outerHeight())/2
+            // });
             $('#overlay, #magnify').fadeIn('fast');
         });
 
@@ -96,4 +107,34 @@ $(document).ready(function (){
             });
         });
     });
+
+
+
+    function sizes() {
+        let contentWidth = [...document.body.children].reduce(
+            (a, el) => Math.max(a, el.getBoundingClientRect().right), 0)
+            - document.body.getBoundingClientRect().x;
+
+        return {
+            windowWidth:  document.documentElement.clientWidth,
+            windowHeight: document.documentElement.clientHeight,
+            pageWidth:    Math.min(document.body.scrollWidth, contentWidth),
+            pageHeight:   document.body.scrollHeight,
+            screenWidth:  window.screen.width,
+            screenHeight: window.screen.height,
+            pageX:        document.body.getBoundingClientRect().x,
+            pageY:        document.body.getBoundingClientRect().y,
+            screenX:     -window.screenX,
+            screenY:     -window.screenY - (window.outerHeight-window.innerHeight),
+        }
+    }
+
+
+
+// TEST
+
+    function show() {
+        console.log(sizes());
+    }
+    alert(getWidth());
 })

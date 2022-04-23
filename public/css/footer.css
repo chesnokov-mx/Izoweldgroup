@@ -23,7 +23,7 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    transition: all 0.3s ease-in;
+    /*transition: all 0.3s ease-in;*/
 }
 .footer__logo:hover{
     background-image: url("../images/logoBlueHover.svg");
@@ -55,7 +55,9 @@ footer{
     padding: 8px 0px 8px 0px;
 }
 
-
+.footer__navigation-link{
+    color: white;
+}
 .footer__navigation-link:visited{
     color:white;
 }

@@ -1,7 +1,7 @@
 $(function (){
     $(".RootFooter").append("<footer>\n" +
         "        <div class=\"footer_lr\">\n" +
-        "            <div class=\"footer_left\"><a href=\"index.html\"><div class = \"footer__logo\"></div></a></div>\n" +
+        "            <div class=\"footer_left\"><a href=\"/\"><div class = \"footer__logo\"></div></a></div>\n" +
         "            <div class=\"footer_right\">\n" +
         "                <div class=\"footer__right-div\">\n" +
         "                    <p><b lang='footer_nav'>Navigation</b></p>\n" +
