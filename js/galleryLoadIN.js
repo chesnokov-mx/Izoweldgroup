@@ -11,6 +11,7 @@ $(document).ready(function (){
         $("#glrBTN2").removeClass("activeBTN")
         $("#glrBTN3").removeClass("activeBTN")
         $("#glrBTN4").removeClass("activeBTN")
+        $("#glrBTN5").removeClass("activeBTN")
         $(".GALLERY__content-wrapper").empty()
         let i = 1;
         while (i < 11) {
@@ -26,6 +27,7 @@ $(document).ready(function (){
         $("#glrBTN1").removeClass("activeBTN")
         $("#glrBTN3").removeClass("activeBTN")
         $("#glrBTN4").removeClass("activeBTN")
+        $("#glrBTN5").removeClass("activeBTN")
         $(".GALLERY__content-wrapper").empty()
         let i = 1;
         while (i < 8) {
@@ -41,6 +43,7 @@ $(document).ready(function (){
         $("#glrBTN2").removeClass("activeBTN")
         $("#glrBTN1").removeClass("activeBTN")
         $("#glrBTN4").removeClass("activeBTN")
+        $("#glrBTN5").removeClass("activeBTN")
         $(".GALLERY__content-wrapper").empty()
         let i = 1;
         while (i < 12) {
@@ -56,12 +59,29 @@ $(document).ready(function (){
         $("#glrBTN3").removeClass("activeBTN")
         $("#glrBTN2").removeClass("activeBTN")
         $("#glrBTN1").removeClass("activeBTN")
+        $("#glrBTN5").removeClass("activeBTN")
         $(".GALLERY__content-wrapper").empty()
         let i = 1;
         while (i < 9) {
             $(".GALLERY__content-wrapper").append("" +
                 "<div class=\"GALLERY__content-item\">" +
                 "<img class=\"minimized\" src=\"../images/Gallery/Workshop/"+i+".jpeg\" alt=\"sdfdsf\">" +
+                "</div>")
+            i++;
+        }
+    })
+    $("#glrBTN5").click(function (){
+        $("#glrBTN5").addClass("activeBTN")
+        $("#glrBTN3").removeClass("activeBTN")
+        $("#glrBTN4").removeClass("activeBTN")
+        $("#glrBTN2").removeClass("activeBTN")
+        $("#glrBTN1").removeClass("activeBTN")
+        $(".GALLERY__content-wrapper").empty()
+        let i = 1;
+        while (i < 5) {
+            $(".GALLERY__content-wrapper").append("" +
+                "<div class=\"GALLERY__content-item\">" +
+                "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+i+".JPG\" alt=\"sdfdsf\">" +
                 "</div>")
             i++;
         }
@@ -88,15 +108,7 @@ $(document).ready(function (){
 
             var i_path = $(this).attr('src');
             $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
-            // if(getWidth() <= 500){
-            //     $('#magnify').css({left: "0px",});
-            // }
-            // $('#magnify').css({
-            //     // left: ($(document).width() - $('#magnify').outerWidth())/2,
-            //     // left: "-100px",
-            //     // top: "100px", .outerWidth()
-            //     // top: ($(window).height() - $('#magnify').outerHeight())/2
-            // });
+
             $('#overlay, #magnify').fadeIn('fast');
         });
 
@@ -136,5 +148,4 @@ $(document).ready(function (){
     function show() {
         console.log(sizes());
     }
-    alert(getWidth());
 })
