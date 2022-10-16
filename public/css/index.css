@@ -108,10 +108,20 @@ a{
     }
     .Intro{
         min-height: 600px;
-        background-image: url("../images/Gallery/Workshop/1.jpeg");
+        background-image: url("../images/mainBG.JPG");
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: left;
     }
+    .Intro:before {
+        background: rgba(0,0,0,0.5);
+        content: "";
+        position: absolute;
+        width: 100vmax;
+        height: 600px;
+        transform: translateX(-380px);
+        z-index: 1;
+    }
+
     .thirdScreen__title{
         padding: 0 90px;
         font-size: 16px;

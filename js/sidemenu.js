@@ -11,6 +11,72 @@ function resizing(){
     $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(-1000px)")
     $(".navWrapper, .Language").css("opacity", "1");
 }
+function closeSD(){
+    if($(".SideMenu").css("width") === "90px" && $(window).width() > 1200) {
+        $(".navWrapper").css("transform", "translateX(0px)");
+        $(".Language").css("transform", "translateX(0px)");
+        $(".MenuText").animate({
+            opacity: 0
+        }, 500,function (){
+            // $(".MenuText").css("display", "none")
+        })
+
+        $(".SideMenu").animate({
+            width: "300px"
+        }, 600, function (){
+            $(".navWrapper, .Language").animate({
+                opacity: 1
+            }, 250)
+        })
+
+        $(".main_po").animate({opacity: 0}, 300, function (){
+            $(".main_po").css("transform", "rotate(-45deg)")
+            $(".main_po").animate({opacity: 1}, 300)
+            $(".main_poo").animate({opacity: 1}, 300)
+        })
+        $(".less_po").animate({opacity: 0},300)
+        $(".less_po_last").animate({opacity: 0}, 300)
+
+
+    }
+
+    if($(".SideMenu").css("height") === "400px" && $(window).width() <= 1200){
+        $(".SideMenu").animate({height: 0}, 400)
+        $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(-1000px)")
+    }
+
+    if($(".SideMenu").css("width") === "300px" && $(window).width() > 1200){
+        $(".navWrapper, .Language").animate({
+            opacity: 0
+        }, 250, function (){
+            $(".navWrapper").css("transform", "translateX(-1000px)");
+            $(".Language").css("transform", "translateX(-1000px)");
+            $(".SideMenu").animate({
+                width: "90px"
+            }, 600, function (){
+                // $(".MenuText").css("display", "block")
+                $(".MenuText").animate({
+                    opacity: 1
+                }, 500)
+            })
+            $(".main_poo").animate({opacity: 0}, 300)
+            $(".main_po").animate({opacity: 0}, 300, function (){
+                $(".main_po").css("transform", "rotate(0)")
+                $(".less_po").animate({opacity: 1}, 300)
+                $(".less_po_last").animate({opacity: 1}, 300)
+                $(".main_po").animate({opacity: 1}, 300)
+            })
+
+        })
+    }
+
+    if($(".SideMenu").css("height") === "0px" && $(window).width() <= 1200){
+        $(".SideMenu").animate({height: 400}, 400)
+        $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(0px)")
+
+    }
+
+}
 
 $(document).ready(function (){
     $(".RootSideMenu").append("<div class=\"SideMenu\">\n" +
@@ -86,70 +152,74 @@ $(document).ready(function (){
     })
 
     $(".hamburger").click(function (){
-        if($(".SideMenu").css("width") === "90px" && $(window).width() > 1200) {
-            $(".navWrapper").css("transform", "translateX(0px)");
-            $(".Language").css("transform", "translateX(0px)");
-            $(".MenuText").animate({
-                opacity: 0
-            }, 500,function (){
-                // $(".MenuText").css("display", "none")
-            })
+        closeSD();
+        // if($(".SideMenu").css("width") === "90px" && $(window).width() > 1200) {
+        //     $(".navWrapper").css("transform", "translateX(0px)");
+        //     $(".Language").css("transform", "translateX(0px)");
+        //     $(".MenuText").animate({
+        //         opacity: 0
+        //     }, 500,function (){
+        //         // $(".MenuText").css("display", "none")
+        //     })
+        //
+        //     $(".SideMenu").animate({
+        //         width: "300px"
+        //     }, 600, function (){
+        //         $(".navWrapper, .Language").animate({
+        //             opacity: 1
+        //         }, 250)
+        //     })
+        //
+        //     $(".main_po").animate({opacity: 0}, 300, function (){
+        //         $(".main_po").css("transform", "rotate(-45deg)")
+        //         $(".main_po").animate({opacity: 1}, 300)
+        //         $(".main_poo").animate({opacity: 1}, 300)
+        //     })
+        //     $(".less_po").animate({opacity: 0},300)
+        //     $(".less_po_last").animate({opacity: 0}, 300)
+        //
+        //
+        // }
 
-            $(".SideMenu").animate({
-                width: "300px"
-            }, 600, function (){
-                $(".navWrapper, .Language").animate({
-                    opacity: 1
-                }, 250)
-            })
-
-            $(".main_po").animate({opacity: 0}, 300, function (){
-                $(".main_po").css("transform", "rotate(-45deg)")
-                $(".main_po").animate({opacity: 1}, 300)
-                $(".main_poo").animate({opacity: 1}, 300)
-            })
-            $(".less_po").animate({opacity: 0},300)
-            $(".less_po_last").animate({opacity: 0}, 300)
-
-
-        }
-
-        if($(".SideMenu").css("height") === "400px" && $(window).width() <= 1200){
-            $(".SideMenu").animate({height: 0}, 400)
-            $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(-1000px)")
-        }
-
-        if($(".SideMenu").css("width") === "300px" && $(window).width() > 1200){
-            $(".navWrapper, .Language").animate({
-                opacity: 0
-            }, 250, function (){
-                $(".navWrapper").css("transform", "translateX(-1000px)");
-                $(".Language").css("transform", "translateX(-1000px)");
-                $(".SideMenu").animate({
-                    width: "90px"
-                }, 600, function (){
-                    // $(".MenuText").css("display", "block")
-                    $(".MenuText").animate({
-                        opacity: 1
-                    }, 500)
-                })
-                $(".main_poo").animate({opacity: 0}, 300)
-                $(".main_po").animate({opacity: 0}, 300, function (){
-                    $(".main_po").css("transform", "rotate(0)")
-                    $(".less_po").animate({opacity: 1}, 300)
-                    $(".less_po_last").animate({opacity: 1}, 300)
-                    $(".main_po").animate({opacity: 1}, 300)
-                })
-
-            })
-        }
-
-        if($(".SideMenu").css("height") === "0px" && $(window).width() <= 1200){
-            $(".SideMenu").animate({height: 400}, 400)
-            $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(0px)")
-
-        }
+        // if($(".SideMenu").css("height") === "400px" && $(window).width() <= 1200){
+        //     $(".SideMenu").animate({height: 0}, 400)
+        //     $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(-1000px)")
+        // }
+        //
+        // if($(".SideMenu").css("width") === "300px" && $(window).width() > 1200){
+        //     $(".navWrapper, .Language").animate({
+        //         opacity: 0
+        //     }, 250, function (){
+        //         $(".navWrapper").css("transform", "translateX(-1000px)");
+        //         $(".Language").css("transform", "translateX(-1000px)");
+        //         $(".SideMenu").animate({
+        //             width: "90px"
+        //         }, 600, function (){
+        //             // $(".MenuText").css("display", "block")
+        //             $(".MenuText").animate({
+        //                 opacity: 1
+        //             }, 500)
+        //         })
+        //         $(".main_poo").animate({opacity: 0}, 300)
+        //         $(".main_po").animate({opacity: 0}, 300, function (){
+        //             $(".main_po").css("transform", "rotate(0)")
+        //             $(".less_po").animate({opacity: 1}, 300)
+        //             $(".less_po_last").animate({opacity: 1}, 300)
+        //             $(".main_po").animate({opacity: 1}, 300)
+        //         })
+        //
+        //     })
+        // }
+        //
+        // if($(".SideMenu").css("height") === "0px" && $(window).width() <= 1200){
+        //     $(".SideMenu").animate({height: 400}, 400)
+        //     $(".navWrapper, .Language, .NavNav, .MenuText").css("transform", "translateY(0px)")
+        //
+        // }
     })
 })
+
+
+
 
 
