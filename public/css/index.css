@@ -107,7 +107,8 @@ a{
         margin: 5px;
     }
     .Intro{
-        min-height: 600px;
+        /*min-height: 600px;*/
+        min-height: 100vh;
         background-image: url("../images/mainBG.JPG");
         background-size: cover;
         background-repeat: no-repeat;
@@ -117,7 +118,8 @@ a{
         content: "";
         position: absolute;
         width: 100vmax;
-        height: 600px;
+        /*height: 600px;*/
+        min-height: 100vh;
         transform: translateX(-380px);
         z-index: 1;
     }
