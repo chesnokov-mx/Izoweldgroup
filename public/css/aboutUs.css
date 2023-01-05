@@ -1,0 +1,352 @@
+body{
+    overflow-y: auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutUS__title{
+    margin-left: 120px;
+    padding-top: 80px;
+}
+h1.Paige__title{
+    font-family: 'Ruda', sans-serif;
+    margin-right: 25px;
+}
+.aboutUs__title-wrapper{
+    /*margin-top: 100px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+}
+
+.Paige__title-description{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 15px;
+}
+.Paige__title-div-description{
+    font-family: 'Ruda', sans-serif;
+    border-left: 1px solid black;
+    padding-left: 40px;
+}
+
+
+
+.tenYears{
+    padding-left: 90px;
+    margin-top: 50px;
+}
+.tenYears-wrapper{
+    display: flex;
+}
+.tenYears__rectangle{
+    user-select: none;
+    min-width: 220px;
+    max-width: 220px;
+    height: 300px;
+    border:  5px solid rgba(39, 38, 38, 0.53);
+    color: #575757;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+.tenYears__rectangle:hover{
+    border:  5px solid rgb(17, 16, 16);
+    color: rgb(18, 18, 18);
+}
+
+.tenYears__rectangle p{
+    margin: 10px 10px 0 10px;
+
+    font-size: 40px;
+}
+.tenYears__rectangle span{
+    display: block;
+    color: #111010;
+    font-size: 126px;
+    margin-top: 80px;
+    line-height: 96px;
+    font-weight: 500;
+}
+.tenYears__divText{
+    max-width: 900px;
+}
+.tenYears__divText h5{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.tenYears__divText p{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+
+
+
+.CompletedProjects{
+    background-image: url("../images/mapEurope.svg");
+    min-height: 854px;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+    margin-left: 120px;
+}
+.BackgroundOnSmallDevice{
+    display: none;
+}
+.CompletedProjects h1 {
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 61px;
+
+    padding-top: 200px;
+    padding-left: 80px;
+    margin-bottom: 50px;
+}
+.CompletedProjects li{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+
+    padding-left: 80px;
+    list-style-type: none;
+}
+.CompletedProjects p{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    max-width: 500px;
+    padding-left: 80px;
+    padding-top: 100px;
+}
+.CompletedProjects a{
+    font-family: 'Ruda';
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    padding-left: 60px;
+    margin-left: 140px;
+
+    display: block;
+    margin-top: 100px;
+    transition: all 0.4s ease-out;
+}
+.CompletedProjects a:visited{
+    color: black;
+}
+.CompletedProjects a:hover{
+    color: #0F80E9;
+}
+.CompletedProjects a:before{
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 50px;
+    background-color: black;
+    left: 4px;
+    top: 14px;
+    transition: all 0.3s ease;
+}
+.CompletedProjects a:hover:before{
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 1200px){
+    .tenYears{
+        padding: 0 20px 0 20px;
+    }
+    .tenYears__rectangle{
+        margin: 0 0 0 30px;
+    }
+    .tenYears__divText h5{
+        margin: 20px 0 20px
+    }
+    .CompletedProjects{
+        margin-left: 0;
+    }
+    .InviteToSendRequest{
+        margin: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .Paige__title-div-description{
+        border: none;
+        padding-left: 0;
+    }
+    .aboutUS__title{
+        margin-left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .aboutUs__title-wrapper{
+        flex-direction: column;
+    }
+    h1.Paige__title{
+        margin: 10px 0 10px 0;
+        line-height: 25px;
+    }
+    h3.Paige__title-description{
+        margin: 16px 0 16px 0;
+        text-align: center;
+    }
+
+    .tenYears__rectangle{
+        margin: 0;
+    }
+    .tenYears__divText h5{
+        padding-left: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .tenYears__divText p {
+        font-size: 15px;
+        line-height: 15px;
+        padding-left: 30px;
+    }
+
+    .CompletedProjects{
+        padding: 0 20px 0 20px;
+    }
+    .CompletedProjects h1 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .CompletedProjects li{
+        font-size: 16px;
+        padding-left: 0;
+    }
+    .CompletedProjects{
+        background-image: none;
+    }
+    .CompletedProjects p{
+        font-size: 17px;
+        line-height: 22px;
+        padding: 28px;
+        margin: 0;
+        max-width: 1000px
+    }
+    .CompletedProjects a{
+        display: block;
+        max-width: 370px;
+        margin: 50px auto;
+        padding: 0;
+        text-align: center;
+    }
+    .BackgroundOnSmallDevice{
+        display: block;
+        width: auto;
+    }
+}
+@media (max-width: 600px) {
+    .tenYears-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tenYears{
+        margin-top: 20px;
+    }
+    .tenYears__divText h5, .tenYears__divText p{
+        padding-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .tenYears__divText{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .CompletedProjects h1{
+        font-size: 23px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+h3.Paige__title-description{
+    font-family: 'Ruda', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+    .tenYears-wrapper{
+        
+    }
+.tenYears__divText h5, .tenYears__divText p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    .CompletedProjects a{
+        font-size: 16px;
+        max-width: 275px;
+    }
+    .InviteToSendRequest-divGrid-right button{
+        font-size: 14px;
+        padding: 20px 40px;
+    }
+    .InviteToSendRequest{
+        padding: 0 10px;
+    }
+    .InviteToSendRequest-divGrid p{
+        font-size: 12px;
+        line-height: 13px;
+    }
+}
+@media (max-width: 400px) {
+    .CompletedProjects li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    ul{
+        padding-inline-start: 0
+    }
+    .CompletedProjects p{
+        padding: 5px;
+        text-align: justify;
+    }
+}

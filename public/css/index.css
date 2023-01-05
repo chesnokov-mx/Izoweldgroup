@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.firstView{
+    background-color: #82a04a;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+#videoPlayer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.Intro{
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+.Intro::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.62);
+}
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    max-width: 1200px;
+    padding-left: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.intro__title{
+    margin: 20px 0px;
+    color: white;
+}
+.intro__subtitle{
+    margin: 20px 0px;
+    color: #8f8f8f;
+    font-size: 20px;
+}
+.addit{
+    margin-right: 120px;
+}
+
+.Paige__title{
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 15px;
+}
+@media (max-width: 1200px) {
+    .Intro{
+        text-align: center;
+    }
+    .container{
+        padding: 0;
+    }
+
+}
+@media (max-width: 770px) {
+    .intro__title{
+        padding: 0 10px 0 10px;
+        font-size: 16px;
+        margin: 10px 0 ;
+    }
+    .intro__subtitle{
+        padding: 0 10px 0 10px;
+        font-size: 14px;
+        margin: 10px 0 ;
+    }
+    #videoPlayer{
+        display: none;
+    }
+    .secondScreenBTN{
+        font-size: 14px;
+        padding: 10px 30px;
+        display: inline-block;
+        margin: 5px;
+    }
+    .Intro{
+        /*min-height: 600px;*/
+        min-height: 100vh;
+        background-image: url("../images/mainBG.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Intro:before {
+        background: rgba(0,0,0,0.5);
+        content: "";
+        position: absolute;
+        width: 100vmax;
+        /*height: 600px;*/
+        min-height: 100vh;
+        transform: translateX(-380px);
+        z-index: 1;
+    }
+
+    .thirdScreen__title{
+        padding: 0 90px;
+        font-size: 16px;
+    }
+    .secondScreenBTN{
+        margin-right: 10px
+    }
+    .secondView{
+        text-align: center;
+    }
+
+}
+@media (max-width: 480px) {
+    .thirdScreen__title{
+        padding: 0 20px;
+    }
+}

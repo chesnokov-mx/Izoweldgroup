@@ -1,0 +1,79 @@
+{
+
+
+  "menu": "menu",
+  "about_us": "O NÁS",
+  "gallery": "GALERIE",
+  "contacts": "KONTAKTY",
+  "machine" : "STROJE A VYBAVENÍ",
+
+
+  "index_h1": "Nabízíme služby průmyslového svařování kovů.",
+  "index_h2": "Nic pro nás není nemožné, slovo „NE“ neexistuje.",
+  "index_leftbtn": "Kontaktujte nás",
+  "index_rightbtn": "Zobrazit projekty",
+
+  "index_secondSCR_h1": "Naše zkušenosti a znalosti, moderní vybavení světových lídrů ve výrobě svařovací techniky - to je záruka úspěšného řešení vašich výrobních úkolů!",
+  "index_secondSCR_btn": "Zjistěte více",
+
+  "footer_nav": "Navigace",
+  "footer_nav_AU": "O nás",
+  "footer_nav_G": "Galerie",
+  "footer_nav_C": "Kontakty",
+
+  "footer_phone": "Telefon",
+
+  "ABOUT US": "O NÁS",
+  "weoffer": "Nabízíme služby průmyslového svařování kovů.",
+  "weare": "Jsme připraveni plnit svářečské zakázky.",
+
+  "yearsonMarket": "let na trhu",
+  "TIG": "TIG/MIG and MAG svařování vyžaduje kvalitu a přesnost práce. Ne každému se to podaří, ale my to zvládáme bez problémů!",
+  "TIG#1": "Zkušenosti našich mistrů nám umožňují provádět svářečské práce jakékoli složitosti.",
+  "TIG#2": "Pro svařování používáme vlastní zařízení a materiály.",
+  "TIG#3": "Veškeré práce provádějí certifikovaní specialisté plně v souladu s aktuálními regulačními požadavky.",
+
+  "Completed": "DOKONČENÉ PROJEKTY V <b>5 ZEMÍCH</b>",
+  "1cntr": "<b>Německo</b> - pivovary, mlékárny, potravinářský průmysl",
+  "2cntr": "<b>Nizozemsko</b> – loděnice, rafinérie",
+  "3cntr": "<b>Anglie</b> – pivovary, potravinářství, průmysl",
+  "4cntr": "<b>Rakousko</b> – potravinářský průmysl",
+  "5cntr": "<b>Česká republika</b> - bioplyn, léčiva",
+
+  "geo": "Geografie služeb se neomezuje pouze na Českou republiku: spolupracujeme s celou Evropou a jsme připraveni zvážit možnosti spolupráce s novými zákazníky.",
+  "WATCH US AT WORK": "SLEDUJTE NÁS V PRÁCI",
+
+  "invitetoreq": "V případě zájmu o ceník svářečských prací nás prosím kontaktujte telefonicky nebo prostřednictvím formuláře zpětné vazby a uveďte, jaké práce je potřeba provést. Náš manažer vás bude informovat o nejaktuálnějších informacích o ceně a načasování objednávky.",
+  "inviteBTN": "Poslat žádost",
+
+  "SEND A REQUEST FOR A PROJECT": "ZAŠLETE ŽÁDOST O PROJEKT",
+  "YOUR NAME": "TVÉ JMÉNO",
+  "YOUR E_MAIL": "TVŮJ E-MAIL",
+  "YOUR PHONE NUMBER": "VAŠE TELEFONNÍ ČÍSLO",
+  "MESSAGE": "ZPRÁVA",
+  "CLOSE": "zavřít",
+  "Send request": "Poslat žádost",
+
+
+
+  "GALLERY": "GALERIE",
+  "Watch us at work": "Sledujte nás při práci",
+  "shipyard": "loděnice",
+  "food industry": "potravinářský průmysl",
+  "biogas": "bioplyn",
+  "workshop": "dílenská výroba",
+  "pallets": "přepravní palety",
+
+
+  "CONTACTS": "KONTAKTY",
+  "CALL": "TELEFON",
+  "WRITE": "E-MAILEM",
+  "COME": "ADRESA",
+  "BANK ACCOUNT": "BANKOVNÍ ÚČET",
+
+  "RoboticWelding": "Robotické svařování - Fanuc 100ic",
+  "BandSaw": "Pásová pila - PILOUS 235 plus",
+  "Forklift" : "Vysokozdvižný vozík - Jungheinrich",
+  "WeldingInventer" : "Svařovací invertor - 8x Kuhtreiber procesor",
+  "PillarDrill" : "Sloupová vrtačka - Optimum"
+}

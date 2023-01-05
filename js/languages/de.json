@@ -1,0 +1,81 @@
+{
+
+  "menu": "Speisekarte",
+  "about_us": "ÜBER UNS",
+  "gallery": "GALERIE",
+  "contacts": "KONTAKTE",
+  "machine" : "MASCHINEN UND ANLAGEN",
+
+
+  "index_h1": "Wir bieten industrielles Metallschweißen an.",
+  "index_h2": "Nichts ist für uns unmöglich, das Wort „NEIN“ gibt es nicht.",
+  "index_leftbtn": "Kontaktiere uns",
+  "index_rightbtn": "Projekte anzeigen",
+
+  "index_secondSCR_h1": "Unsere Erfahrung und unser Wissen, moderne Ausrüstung von Weltmarktführern in der Herstellung von Schweißgeräten - das ist die Garantie für eine erfolgreiche Lösung Ihrer Produktionsaufgaben!",
+  "index_secondSCR_btn": "Mehr erfahren",
+
+  "footer_nav": "Navigation",
+  "footer_nav_AU": "Über uns",
+  "footer_nav_G": "Allergie",
+  "footer_nav_C": "Kontakte",
+
+  "footer_phone": "Telefon",
+
+  "ABOUT US": "ÜBER UNS",
+  "weoffer": "Wir bieten industrielles Metallschweißen an.",
+  "weare": "Wir sind bereit, Schweißaufträge zu erfüllen.",
+
+  "yearsonMarket": "Jahren auf dem Markt",
+  "TIG": "WIG/MIG und MAG Schweißen erfordert Qualität und Präzision in der Arbeit. Das gelingt nicht jedem, aber wir schaffen das ohne Probleme!",
+  "TIG#1": "Die Erfahrung unserer Meister ermöglicht es uns, Schweißarbeiten beliebiger Komplexität durchzuführen.",
+  "TIG#2": "Wir verwenden unsere eigenen Geräte und Materialien zum Schweißen.",
+  "TIG#3": "Alle Arbeiten werden von zertifizierten Spezialisten unter vollständiger Einhaltung der geltenden behördlichen Anforderungen durchgeführt.",
+
+  "Completed": "ABGESCHLOSSENE PROJEKTE <b>5 LÄNDER</b>",
+  "1cntr": "<b>Deutschland</b> - Brauereien, Molkereien, Lebensmittelindustrie",
+  "2cntr": "<b>Niederlande</b> - Werften, Raffinerien",
+  "3cntr": "<b>England</b> - Brauereien, Lebensmittel, Industrie",
+  "4cntr": "<b>Österreich</b> - Lebensmittelindustrie",
+  "5cntr": "<b>Tschechische Republik</b> - Biogas, Arzneimittel",
+
+  "geo": "Die Geographie der Dienstleistungen ist nicht auf die Tschechische Republik beschränkt: Wir arbeiten mit ganz Europa zusammen und sind bereit, Optionen für die Zusammenarbeit mit neuen Kunden in Betracht zu ziehen.",
+  "WATCH US AT WORK": "SEHEN SIE UNS BEI DER ARBEIT ZU",
+
+  "invitetoreq": "Wenn Sie an einer Preisliste für Schweißarbeiten interessiert sind, kontaktieren Sie uns bitte telefonisch oder über das Feedback-Formular und geben Sie an, welche Arbeiten durchgeführt werden müssen. Unser Manager informiert Sie über die aktuellsten Informationen zu Kosten und Zeitpunkt der Bestellung.",
+  "inviteBTN": "Anfrage senden",
+
+  "SEND A REQUEST FOR A PROJECT": "SENDEN SIE EINE ANFRAGE FÜR EIN PROJEKT",
+  "YOUR NAME": "DEIN NAME",
+  "YOUR E_MAIL": "DEINE E-MAIL",
+  "YOUR PHONE NUMBER": "DEINE TELEFONNUMMER",
+  "MESSAGE": "BOTSCHAFT",
+  "CLOSE": "schließen",
+  "Send request": "Anfrage senden",
+
+
+
+  "GALLERY": "GALERIE",
+  "Watch us at work": "Schauen Sie uns bei der Arbeit zu",
+  "shipyard": "Werft",
+  "food industry": "Nahrungsmittelindustrie",
+  "biogas": "Biogas",
+  "workshop": "Werkstatt",
+  "pallets": "Transportpaletten",
+
+
+  "CONTACTS": "KONTAKTE",
+  "CALL": "TELEFON",
+  "WRITE": "EMAIL",
+  "COME": "DIE ANSCHRIFT",
+  "BANK ACCOUNT": "BANKKONTO",
+
+
+  "RoboticWelding": "Roboterschweißen - Fanuc 100ic",
+  "BandSaw": "Bandsäge - PILOUS 235 plus",
+  "Forklift" : "Forklift - Jungheinrich",
+  "WeldingInventer" : "Gabelstapler - Jungheinrich",
+  "PillarDrill" : "Säulenbohrmaschine - Optimal"
+
+
+}

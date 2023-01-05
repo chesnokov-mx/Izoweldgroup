@@ -1,0 +1,242 @@
+
+.InviteToSendRequest{
+    display: block;
+    min-height: 260px;
+    margin-left: 90px;
+    padding: 0px 60px ;
+    background-color: black;
+    color: white;
+}
+.InviteToSendRequest p {
+    margin-top: 0;
+}
+.InviteToSendRequest-divGrid{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.InviteToSendRequest-divGrid p{
+
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: justify;
+
+    max-width: 600px;
+
+    margin: auto auto;
+
+
+}
+.InviteToSendRequest-divGrid-left{
+    font-size: 14px;
+    padding-top: 60px;
+
+}
+.InviteToSendRequest-divGrid-right{
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+}
+.InviteToSendRequest-divGrid-right button{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px 80px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    z-index: 3;
+    border-radius: 5px;
+
+    background-color: black;
+    border: 1px solid #00e8fe;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.InviteToSendRequest-divGrid-right button:hover{
+    color: black;
+}
+.InviteToSendRequest-divGrid-right button span{
+    position: relative;
+    z-index: 5;
+}
+.InviteToSendRequest-divGrid-right button:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 4;
+    height: 100%;
+
+    background: rgb(0, 232, 254);
+    transition: all 0.3s ease;
+}
+.InviteToSendRequest-divGrid-right button:hover:before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.FeedBackForm{
+    height: 100vh;
+    width: 700px;
+    top:0;
+    left: 90px;
+    position: fixed;
+
+    background-color: white;
+    border-right: 2px solid black;
+    z-index: 10;
+    transform: translateX(-1000px);
+}
+.FeedBackForm-wrapper{
+    position: relative;
+
+}
+
+.FeedBackForm h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+.FeedBackForm form{
+    margin-top: 50px;
+}
+.FeedBackForm-input{
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    outline: none;
+
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    resize: none;
+}
+.message{
+    height: 100px;
+}
+.FeedBackForm-input:active{
+
+}
+
+.FeedBackForm-btn{
+    display: block;
+    width: 247px;
+    height: 65px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    background-color: white;
+    border: 3px solid #000000;
+
+    transition: all 0.3s ease-in;
+}
+.FeedBackForm-btn:hover{
+    background-color: black;
+    color: white;
+ }
+
+.FeedBackForm-closeBTN{
+    width: 100px;
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    background-color: white;
+    color: #585858;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in;
+}
+.underX{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.FeedBackForm-closeBTN:hover{
+    letter-spacing: 1px;
+    color: black;
+}
+.FeedBackForm span{
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+}
+@media (max-width: 1200px) {
+    .FeedBackForm{
+        left: 0;
+    }
+}
+@media  (max-width: 1200px){
+    .InviteToSendRequest{
+        margin: 0;
+    }
+}
+@media (max-width: 720px){
+    .FeedBackForm{
+        width: 100%;
+        height: 100vh;
+    }
+}
+@media (max-width: 500px) {
+    .FeedBackForm-input{
+        width: 320px;
+    }
+    .FeedBackForm-closeBTN{
+        margin-left: 10px;
+    }
+    .InviteToSendRequest-divGrid-right button{
+        font-size: 14px;
+        padding: 20px 40px;
+    }
+    .InviteToSendRequest{
+        padding: 0 10px;
+    }
+    .InviteToSendRequest-divGrid p{
+        font-size: 12px;
+        line-height: 13px;
+    }
+}
+
