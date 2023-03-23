@@ -1,7 +1,10 @@
 $(document).ready(function (){
     let j = 1;
     while (j < 11) {
-        $(".GALLERY__content-wrapper").append("<div class=\"GALLERY__content-item\"><img class=\"minimized\"src=\"../images/Gallery/Board/"+j+".JPG\" alt=\"sdfdsf\"></div>")
+        $(".GALLERY__content-wrapper").append("" +
+            "<div class=\"GALLERY__content-item\">" +
+            "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+j+".JPG\" alt=\"sdfdsf\">" +
+            "</div>")
         j++;
     }
 
@@ -9,17 +12,17 @@ $(document).ready(function (){
 
         $("#glrBTN1").addClass("activeBTN")
         $("#glrBTN2").removeClass("activeBTN")
-        $("#glrBTN3").removeClass("activeBTN")
-        $("#glrBTN4").removeClass("activeBTN")
-        $("#glrBTN5").removeClass("activeBTN")
+        // $("#glrBTN3").removeClass("activeBTN")
+        // $("#glrBTN4").removeClass("activeBTN")
+        // $("#glrBTN5").removeClass("activeBTN")
         $(".GALLERY__content-wrapper").empty()
         let i = 1;
         while (i < 11) {
-            $(".GALLERY__content-wrapper").append("" +
-                "<div class=\"GALLERY__content-item\">" +
-                    "<img class=\"minimized\" src=\"../images/Gallery/Board/"+i+".JPG\" alt=\"sdfdsf\">" +
-                "</div>")
-            i++;
+                    $(".GALLERY__content-wrapper").append("" +
+                        "<div class=\"GALLERY__content-item\">" +
+                        "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+i+".JPG\" alt=\"sdfdsf\">" +
+                        "</div>")
+                    i++;
         }
     })
     $("#glrBTN2").click(function (){
@@ -38,54 +41,54 @@ $(document).ready(function (){
             i++;
         }
     })
-    $("#glrBTN3").click(function (){
-        $("#glrBTN3").addClass("activeBTN")
-        $("#glrBTN2").removeClass("activeBTN")
-        $("#glrBTN1").removeClass("activeBTN")
-        $("#glrBTN4").removeClass("activeBTN")
-        $("#glrBTN5").removeClass("activeBTN")
-        $(".GALLERY__content-wrapper").empty()
-        let i = 1;
-        while (i < 12) {
-            $(".GALLERY__content-wrapper").append("" +
-                "<div class=\"GALLERY__content-item\">" +
-                "<img class=\"minimized\" src=\"../images/Gallery/Biogas/"+i+".JPG\" alt=\"sdfdsf\">" +
-                "</div>")
-            i++;
-        }
-    })
-    $("#glrBTN4").click(function (){
-        $("#glrBTN4").addClass("activeBTN")
-        $("#glrBTN3").removeClass("activeBTN")
-        $("#glrBTN2").removeClass("activeBTN")
-        $("#glrBTN1").removeClass("activeBTN")
-        $("#glrBTN5").removeClass("activeBTN")
-        $(".GALLERY__content-wrapper").empty()
-        let i = 1;
-        while (i < 9) {
-            $(".GALLERY__content-wrapper").append("" +
-                "<div class=\"GALLERY__content-item\">" +
-                "<img class=\"minimized\" src=\"../images/Gallery/Workshop/"+i+".jpeg\" alt=\"sdfdsf\">" +
-                "</div>")
-            i++;
-        }
-    })
-    $("#glrBTN5").click(function (){
-        $("#glrBTN5").addClass("activeBTN")
-        $("#glrBTN3").removeClass("activeBTN")
-        $("#glrBTN4").removeClass("activeBTN")
-        $("#glrBTN2").removeClass("activeBTN")
-        $("#glrBTN1").removeClass("activeBTN")
-        $(".GALLERY__content-wrapper").empty()
-        let i = 1;
-        while (i < 8) {
-            $(".GALLERY__content-wrapper").append("" +
-                "<div class=\"GALLERY__content-item\">" +
-                "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+i+".JPG\" alt=\"sdfdsf\">" +
-                "</div>")
-            i++;
-        }
-    })
+    // $("#glrBTN3").click(function (){
+    //     $("#glrBTN3").addClass("activeBTN")
+    //     $("#glrBTN2").removeClass("activeBTN")
+    //     $("#glrBTN1").removeClass("activeBTN")
+    //     $("#glrBTN4").removeClass("activeBTN")
+    //     $("#glrBTN5").removeClass("activeBTN")
+    //     $(".GALLERY__content-wrapper").empty()
+    //     let i = 1;
+    //     while (i < 12) {
+    //         $(".GALLERY__content-wrapper").append("" +
+    //             "<div class=\"GALLERY__content-item\">" +
+    //             "<img class=\"minimized\" src=\"../images/Gallery/Biogas/"+i+".JPG\" alt=\"sdfdsf\">" +
+    //             "</div>")
+    //         i++;
+    //     }
+    // })
+    // $("#glrBTN4").click(function (){
+    //     $("#glrBTN4").addClass("activeBTN")
+    //     $("#glrBTN3").removeClass("activeBTN")
+    //     $("#glrBTN2").removeClass("activeBTN")
+    //     $("#glrBTN1").removeClass("activeBTN")
+    //     $("#glrBTN5").removeClass("activeBTN")
+    //     $(".GALLERY__content-wrapper").empty()
+    //     let i = 1;
+    //     while (i < 9) {
+    //         $(".GALLERY__content-wrapper").append("" +
+    //             "<div class=\"GALLERY__content-item\">" +
+    //             "<img class=\"minimized\" src=\"../images/Gallery/Workshop/"+i+".jpeg\" alt=\"sdfdsf\">" +
+    //             "</div>")
+    //         i++;
+    //     }
+    // })
+    // $("#glrBTN5").click(function (){
+    //     $("#glrBTN5").addClass("activeBTN")
+    //     $("#glrBTN3").removeClass("activeBTN")
+    //     $("#glrBTN4").removeClass("activeBTN")
+    //     $("#glrBTN2").removeClass("activeBTN")
+    //     $("#glrBTN1").removeClass("activeBTN")
+    //     $(".GALLERY__content-wrapper").empty()
+    //     let i = 1;
+    //     while (i < 8) {
+    //         $(".GALLERY__content-wrapper").append("" +
+    //             "<div class=\"GALLERY__content-item\">" +
+    //             "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+i+".JPG\" alt=\"sdfdsf\">" +
+    //             "</div>")
+    //         i++;
+    //     }
+    // })
 
 
 

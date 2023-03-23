@@ -75,7 +75,8 @@
   "BandSaw": "Bandsäge - PILOUS 235 plus",
   "Forklift" : "Forklift - Jungheinrich",
   "WeldingInventer" : "Gabelstapler - Jungheinrich",
-  "PillarDrill" : "Säulenbohrmaschine - Optimal"
+  "PillarDrill" : "Säulenbohrmaschine - Optimal",
+  "OwnTransport": "eigener Transport"
 
 
 }
