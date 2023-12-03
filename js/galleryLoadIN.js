@@ -1,6 +1,6 @@
 $(document).ready(function (){
     let j = 1;
-    while (j < 18) {
+    while (j < 7) {
         $(".GALLERY__content-wrapper").append("" +
             "<div class=\"GALLERY__content-item\">" +
             "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+j+".JPG\" alt=\"sdfdsf\">" +
@@ -17,7 +17,7 @@ $(document).ready(function (){
         // $("#glrBTN5").removeClass("activeBTN")
         $(".GALLERY__content-wrapper").empty()
         let i = 1;
-        while (i < 18) {
+        while (i < 7) {
                     $(".GALLERY__content-wrapper").append("" +
                         "<div class=\"GALLERY__content-item\">" +
                         "<img class=\"minimized\" src=\"../images/Gallery/tpallets/"+i+".JPG\" alt=\"sdfdsf\">" +
