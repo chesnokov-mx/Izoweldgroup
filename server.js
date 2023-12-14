@@ -30,22 +30,22 @@ const nodemailer = require('nodemailer')
 app.post('/submit-form', (req, res) => {
 
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'Hotmail',
         auth: {
-            user: 'izoweldgroupmail@gmail.com',
-            pass: 'izoweldgroupmail1!',
+            user: 'izoweld@hotmail.com',
+            pass: '5+6:5W5wWrGA,E:',
         },
     })
     let mailOptions = {
-        from: 'izoweldgroupmail@gmail.com', // sender address
-        to: 'izoweldgroupmail@gmail.com', // list of receivers
+        from: 'izoweld@hotmail.com', // sender address
+        to: 'izoweld@hotmail.com', // list of receivers
         subject: 'New Request', // Subject line
         html: "Email: " + req.body.email + "<br>" +
                 "Name: " + req.body.name + "<br>" +
             "Phone number: " + req.body.num + "<br>" +
             "Message: " + req.body.msg
     };
-
+    console.log(req.body);
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             return console.log('Error');
